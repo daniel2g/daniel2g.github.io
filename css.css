@@ -8,7 +8,7 @@ body {
 }
 
 .nav {
-    order: 2;
+  order: 2;
   position: fixed;
   margin-left: 1em;
   margin-top: 1.5em;
@@ -16,21 +16,20 @@ body {
 }
 
 .main {
-    order: 1;
- margin-left: 8em;
+  order: 1;
+  margin-left: 8em;
   margin-right: 1em;
   z-index: 1;
-
 }
 
 .home {
-    position: fixed;
-    margin-top: 1.5em;
-    margin-left: 8em;
+  position: fixed;
+  margin-top: 1.5em;
+  margin-left: 8em;
 }
 
 #current {
-    font-style: italic;
+  font-style: italic;
 }
 
 a {
@@ -69,16 +68,32 @@ a.fracking:hover::after {
 }
 
 .flex {
-    display: flex;
-    justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
 
 img {
-    height: 95vh;
-   margin-bottom: 4em;
+  height: 95vh;
+  margin-bottom: 4em;
 }
 
 .chickpea-img {
-    margin-right: 2px;
+  margin-right: 2px;
+}
+
+.toys-img {
+  margin-right: 2px;
+}
+
+.thetfest-poster-zoom {
+  height: 285vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.lnl {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
