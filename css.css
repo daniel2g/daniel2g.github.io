@@ -1,0 +1,84 @@
+body {
+  font-family: benton-sans, sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+    order: 2;
+  position: fixed;
+  margin-left: 1em;
+  margin-top: 1.5em;
+  z-index: 9;
+}
+
+.main {
+    order: 1;
+ margin-left: 8em;
+  margin-right: 1em;
+  z-index: 1;
+
+}
+
+.home {
+    position: fixed;
+    margin-top: 1.5em;
+    margin-left: 8em;
+}
+
+#current {
+    font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover::after {
+  font-style: italic;
+  font-size: 0.75em;
+  line-height: 0.75em;
+}
+
+a.chickpea:hover::after {
+  content: " illustrated poem";
+}
+
+a.toys:hover::after {
+  content: " book design";
+}
+
+a.thetfest:hover::after {
+  content: " music festival brand";
+}
+
+a.locknlube:hover::after {
+  content: " brochure";
+}
+
+a.rashomon:hover::after {
+  content: " poster";
+}
+
+a.fracking:hover::after {
+  content: " poster";
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+
+}
+
+img {
+    height: 95vh;
+   margin-bottom: 4em;
+}
+
+.chickpea-img {
+    margin-right: 2px;
+}
