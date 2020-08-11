@@ -17,16 +17,23 @@ body {
 
 .main {
   order: 1;
-  margin-left: 8em;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10em;
   margin-right: 1em;
   z-index: 1;
 }
 
+#column{
+  flex-direction: column;
+}
+
 .home {
-  /* position: fixed; */
-  margin-top: 1.75em;
-  margin-left: 8em;
-  width: 16em;
+  margin-top: 1.9em;
+  /* margin-left: 6em; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 15em;
 }
 
 #current {
@@ -76,20 +83,29 @@ a.fracking:hover::after {
   content: " poster";
 }
 
+a.invitation:hover::after {
+  content: " letterpress booklet";
+}
+
+
+
 .flex {
-  display: flex;
-  justify-content: center;
+justify-content: center;
 }
 
 img {
   height: 95vh;
-  max-height: calc(95vw / 1.33);
-  margin-bottom: 2em;
+  
+  margin-bottom: 4em;
   object-fit: contain;
 }
 
-.chickpea-img {
-  margin-right: 2px;
+.text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6em;
+  max-width: 32em;
+  padding: 2em;
 }
 
 .toys-img {
@@ -97,23 +113,78 @@ img {
 }
 
 .thetfest-poster-zoom {
-  height: 285vh;
+  width: 100%;
+  height: auto;
+  
+  
+}
+
+.thetfest-talls{
+  display: flex;
+  flex-direction: row;
+  margin-top: 4em;
+  margin-right: 6em;
+}
+
+.thetfest-imgb{
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  height: auto;
+  width: 50%;
 }
 
-.lnl {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.wrist-comp{
+  margin-right: 4em;
 }
+
+.lnlc{
+  margin-right: 6em;
+}
+
+.lnlsp{
+  margin-bottom: 2em;
+}
+
+.invimg{
+  width: 40%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.invsp{
+  display: flex;
+  flex-direction: column;
+  margin-left:-10%;
+  margin-right:23% ;
+  
+
+}
+.invsp-top{
+  display: flex;
+  flex-direction: row;
+
+}
+.invsp-btm{
+  display: flex;
+  flex-direction: row;
+}
+
+.ext{
+width:32%;
+height: auto;
+margin-bottom: 0.5em;
+margin-left: auto;
+margin-right: 7%;
+
+}
+
 
 .slide {
-background-size: contain;
-width: min( calc(100vh - 5em), calc(100vw - 5em) );
-height: min( calc(100vh - 5em), calc(100vw - 5em) );
-margin-left: auto;
+background-image: url(images/slide.jpg);
+background-size: cover;
+width: 32em;
+height: 32em;
+margin-left: 3em;
 margin-right: 1em;
 margin-top: 2em;
 margin-bottom: 2em;
@@ -121,88 +192,183 @@ overflow: hidden;
 
 animation-name: slide;
   animation-play-state: running;
-  animation-duration: 20s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
+  animation-timing-function: steps(7);
+
+  -webkit-animation-name: slide;
+  -webkit-animation-play-state: running;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(6);
 }
 
 @keyframes slide {
-  0% {
-    background-image: url(/images/slide/Chickp.png)
-  }
-  12% {
-    background-image: url(/images/slide/Chickp.png)
-  }
-  16.67% {
-    background-image: url(/images/slide/toys.jpg)
-  }
-  28.67% {
-    background-image: url(/images/slide/toys.jpg)
-  }
-  33.33% {
-    background-image: url(/images/slide/thetfest.jpg)
-  }
-  45.33% {
-    background-image: url(/images/slide/thetfest.jpg)
-  }
-  50% {
-    background-image: url(/images/slide/fracking.jpg)
-  }
-  62% {
-    background-image: url(/images/slide/fracking.jpg)
-  }
-  66.67% {
-    background-image: url(/images/slide/lnl.png)
-  }
-  78.67% {
-    background-image: url(/images/slide/lnl.png)
-  }
-  83.33% {
-    background-image: url(/images/slide/Rashomon.jpg)
-  }
-  95.33% {
-    background-image: url(/images/slide/Rashomon.jpg)
-  }
-  100% {
-    background-image: url(/images/slide/Chickp.png)
-  }
+    from{background-position-y:0%;}
+    to{background-position-y:100%;}
+
 }
 
 
-#mobile{
-  display: flex; flex-direction: row;
-}
 
-@media all and (max-width: 1200px){
-  #mobile{
-    display: block;
-  }
+@media only screen and (max-width: 1200px){
   .slide{
-    margin-left: 1em;
-    margin-right: 1em;
+    width: 24em;
+    height: 24em;
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 1000px) and (orientation: portrait) {
+  img{
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .nav {
     position: static;
+    padding-left: calc(50% - 8.5em);
     margin-bottom: 4em;
+    margin-right: 1em;
+    /* border-top-style: solid;
+    border-top-width: 1px;
+    padding-top: 1em; */
+    margin-top: 0em;
   }
-  body {
-    display: flex;
+  
+  body{
+    margin-left: 0px;
+    margin-right: 0px;
   }
+
   .main {
-    margin-left: 1em;
+    margin-top: 1em;
+    display: flex;
+    margin-left: 0em;
+    margin-right: 0em;
+    flex-direction: column;
   }
   .home {
     position: static;
-    margin-left: 0em;
+    margin-left: auto;
+    margin-right: auto;
   }
   .slide{
-    margin-left: 0em;
-    margin-right: 0.25em;
-    width: min( calc(100vh - 5em), calc(100vw - 3em) );
-    height: min( calc(100vh - 5em), calc(100vw - 3em) );
-    margin-bottom: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16em;
+    height: 16em;
+    
   }
 
+  .schedule{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 512px;
+  }
+
+  .wrist-comp{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    width: auto;
+    height: 90vw;
+    margin-right: 0em;
+    margin-top: -3em;
+    margin-bottom: -2em;
+  }
+
+  img {
+    height:auto;
+    width: 100vw;
+    margin-bottom: 2em;
+  }
+  .text{
+    margin-bottom: 2em;
+    padding-top: 0em;
+  }
+
+  .negativetop{
+    margin-top: -1.5em;
+  }
+
+  .shrink{
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .thetfest-talls{
+    margin-top: 0em;
+    flex-direction: column;
+    margin-right: 0em;
+  }
+
+  .frack {
+    display: none;
+  }
+
+  .fracktop{
+    max-height: 100vh;
+    margin-top: -1.5em;
+  }
+
+  .toycover{
+    max-height: 100vh;
+    margin-bottom: 5em;
+  }
+
+  .lnl{
+    height: auto;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .lnlc{
+    margin-right: auto;
+  }
+
+  .lnlsp{
+    margin-bottom: 4em;
+    margin-top: 2em;
+  }
+
+  .invimg{
+    width: 100vw;
+    height: auto;
+  }
+
+  .invsp{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0em;
+    margin-right: 0em;
+
+  }
+  .invsp-top{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .invsp-btm{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .imv{
+    display: none;
+  }
+
+  .ext{
+    width: calc(100% - 4em);
+    height: auto;
+  margin-bottom: 0.5em;
+  margin-left: 2em;
+  margin-right: 2em;
+
+  }
+
+ 
 }
