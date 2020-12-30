@@ -7,6 +7,12 @@ body {
   flex-direction: column;
 }
 
+p {
+  margin-bottom: 0; 
+  margin-top: 0;
+
+}
+
 .nav {
   order: 2;
   position: fixed;
@@ -33,7 +39,7 @@ body {
   /* margin-left: 6em; */
   margin-left: auto;
   margin-right: auto;
-  width: 15em;
+  width: 18em;
 }
 
 #current {
@@ -87,6 +93,21 @@ a.invitation:hover::after {
   content: " letterpress booklet";
 }
 
+a.ward:hover::after{
+  content:" limited-edition book"
+}
+
+a.fighting:hover::after{
+  content:" discussion board"
+}
+
+a.blur:hover::after{
+  content:" typeface design"
+}
+
+a.butterfly:hover::after{
+  content: " theater poster"
+}
 
 
 .flex {
@@ -179,6 +200,81 @@ margin-right: 7%;
 }
 
 
+.fighting-gif{
+  
+
+  margin-top: 2.5em;
+  margin-bottom: 6em;
+  height:75vh;
+
+  
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  
+
+}
+.fighting1{
+  height:60vh;
+  margin-right: 8em; 
+  margin-top: 2.5em;
+}
+.fighting2{
+  height:60vh;
+  margin-left: 4em;
+}
+
+
+.lyndimg1{
+  margin-top: -1em; 
+  height:100vh;
+}
+.lyndimg2{
+  height:45vh; 
+  margin-bottom: -1em;
+}
+.lyndimg3{
+  margin-bottom: 0; 
+  height:auto; 
+  width:100%;
+}
+.lyndimg5{
+  height:60vh;
+  margin-bottom: 8em;
+}
+
+
+
+.blurtext{
+  height: 80vh;
+ padding: 1.5em 1.5em 2em 1.5em;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#ffffff81;
+}
+
+.blurpans{
+  height:auto;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5em;
+}
+
+.blurx2{
+  margin-top: 3em;
+}
+
+
+
+
+
 .slide {
 background-image: url(images/slide.jpg);
 background-size: cover;
@@ -225,6 +321,17 @@ animation-name: slide;
   }
 }
 
+@media only screen and (max-width: 333px) {
+  .home{
+    /* padding-left: 0.25em; */
+    max-width: 80vw;
+  }
+  .h333{
+    display: none;
+  }
+
+}
+
 @media only screen and (max-width: 1000px) {
   .nav {
     position: static;
@@ -262,6 +369,12 @@ animation-name: slide;
     
   }
 
+  .homeimgdiv{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
   .schedule{
     width: 90vw;
     margin-left: auto;
@@ -288,6 +401,10 @@ animation-name: slide;
     margin-bottom: 2em;
     padding-top: 0em;
   }
+
+
+
+
 
   .negativetop{
     margin-top: -1.5em;
@@ -375,4 +492,107 @@ animation-name: slide;
   }
 
  
+  .fighting-gif{
+    margin-top: -1em;
+    margin-bottom: 4em;
+    width: 95vw;
+    height:auto;
+    
+    
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+  }
+
+  .fighting1{
+    width:95vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 1em;
+  }
+  .fighting2{
+    width:95vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 0em;
+    margin-bottom: 3em;
+  }
+
+
+
+  .lyndimg1{
+    margin-top: 1em; 
+    width: 100vw;
+    height:auto;
+
+  }
+  .lyndimg2{
+    width: 90vw;
+    height:auto; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-top: 0em;
+  }
+  .lyndimg3{
+    margin-top: 2em;
+    margin-bottom: 4em; 
+    height:auto; 
+    width:100vw;
+  }
+  .lyndimg5{
+    width: 84vw;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
+  }
+
+  .lyndbr{
+    display: none;
+  }
+  .lyndimg4{
+    margin-top: 2em;
+  }
+
+
+
+
+
+  .blurtext{
+    width: calc(90vw - 3em);
+    height: auto;
+   padding: 1.5em 1.5em 2em 1.5em;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    background-color:#ffffff81;
+  }
+  
+  .blurpans{
+    height:auto;
+    width:95vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5em;
+    margin-bottom: 4em;
+  }
+
+  .blurx1{
+    margin-bottom: 1em;
+  }
+  .blurx2{
+    margin-bottom: 4em;
+  }
+
+
+
 }
