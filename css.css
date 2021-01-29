@@ -39,7 +39,8 @@ p {
   /* margin-left: 6em; */
   margin-left: auto;
   margin-right: auto;
-  width: 18em;
+  width: 22em;
+  /* width: 18em; */
 }
 
 #current {
@@ -321,10 +322,10 @@ animation-name: slide;
   }
 }
 
-@media only screen and (max-width: 333px) {
+@media only screen and (max-width: 370px) {
   .home{
-    /* padding-left: 0.25em; */
-    max-width: 80vw;
+    /* margin-left: 0.25em; */
+    max-width: 92vw;
   }
   .h333{
     display: none;
