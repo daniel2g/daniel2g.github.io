@@ -8,25 +8,29 @@
     <link rel="stylesheet" href="css.css" />
 
     <link rel="stylesheet" href="https://use.typekit.net/gck2xkr.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <style>
+      :root{
+        --fontweight: 400;
+      }
+    </style>
+
   </head>
-  <body style="font-weight: 400; background-color: #eeeeee;">
-    <div class="main">
+  <body id="index">
+    <div class="main" style="margin-left: 0;">
       <div class="home">
-        <b style="font-weight: 800; font-size: 1.75em;">Daniel Goldberg</b>
-        <br />
-        <br />
-        
-        I'm graduating from the Rhode Island <br class="h333">
-        School of Design and seeking to help craft <br class="h333">
-        and publish visual narratives. Interested in <br class="h333">
-        reader-centered graphic design that accounts <br class="h333">
-        for the subjectivity of communication.
+        <b>Daniel Goldberg</b>
+        <br>
+        <p style="margin-bottom: 26px;">
+         I am a 2021 graduate of the Rhode Island School of Design seeking to help craft and publish visual narratives. I’m interested in reader-centered graphic design that communicates with nuance and clarity. My practice spans typography and layout for print and web, photography and illustration, and writing and research. 
+      </p>
 
 
-        <br />
-        <br />
 
-        <small style="text-transform: none; letter-spacing: 0px;">
+
+        <small style="text-transform: none; letter-spacing: 0.03em;">
           <a href="mailto:danielgoldbergvt@gmail.com">
             danielgoldbergvt@gmail.com
           </a>
@@ -34,54 +38,20 @@
 
         <br />
 
-        <a href="daniel_goldberg_resume.pdf" target="_blank" style="letter-spacing: 0px;">Resume↗</a>
+        <a href="daniel_goldberg_resume_0524.pdf" target="_blank">resume<span style="font-family: 'ibm-plex-sans';">↗</span></a>
 
       </small>
-      </div>
-      
-      <!-- <div class="slide">
-        &nbsp;
-        
-      </div> -->
-
-      <div class="homeimgdiv">
-      <img src="images/home.jpg" alt="" class="homeimg" style="
-      width: 18em;
-height: 18em;
-margin-left: 0em;
-margin-right: 1em;
-margin-top: 2em;
-margin-bottom: 2em;">
-
-</div>
-
-
     </div>
-    <div class="nav">
-      <small>Portfolio</small>
-      <br />
-      <a class="thetfest" href="thetfest.html">Thetfest</a>
-      <br />
-      <a class="fighting" href="fighting.html">Fighting for...</a>
-      <br/>
-      <a class="ward" href="ward.html">Lynd Ward</a>
-      <br />
-      <a class="locknlube" href="locknlube.html">Lock’N’Lube</a>
-      <br />
-      <a class="chickpea" href="chickpea.html">The Chickpea</a>
-      <br />
-      <a class="blur" href="blur.html">Calligraphic Blur</a>
-      <br />
-      <a class="fracking" href="fracking.html">S.3247</a>
-      <br />
-      <a class="toys" href="toys.html">Toys, Change...</a>
-      <br />
-      <a class="rashomon" href="rashomon.html">Rashōmon</a>
-      <br />
-      <a class="invitation" href="invitation.html">The Invitation</a>
-      <br/>
-      <a class="butterfly" href="butterfly.html">M. Butterfly</a>
+
+
+      <div class="navext">
+        <a class="homebutton" href="index.html">Design <br class="hideheadbr">Projects</a>
+        
+        <div id="nav"></div></div>
+      
+      
 
     </div>
   </body>
+  <script>$("#nav").load("nav.html")</script>
 </html>

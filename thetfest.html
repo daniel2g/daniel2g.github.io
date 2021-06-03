@@ -3,37 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Goldberg — Thetfest</title>
-
+    
     <link rel="stylesheet" href="css.css" />
+    <title>Daniel Goldberg – Thetfest</title>
 
     <link rel="stylesheet" href="https://use.typekit.net/gck2xkr.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <style>
+      :root{
+        --fontweight: 300;
+      }
+    </style>
+
   </head>
-  <body style="background-color: #27200e; color: #e7ca6b; ">
-    <div class="nav">
-      <a href="index.html"><small>Daniel Goldberg</small></a>
-      <br />
-      <a class="thetfest" id="current" href="thetfest.html">Thetfest</a>
-      <br />
-      <a class="fighting" href="fighting.html">Fighting for...</a>
-      <br/>
-      <a class="ward" href="ward.html">Lynd Ward</a>
-      <br />
-      <a class="locknlube" href="locknlube.html">Lock’N’Lube</a>
-      <br />
-      <a class="chickpea" href="chickpea.html">The Chickpea</a>
-      <br />
-      <a class="blur" href="blur.html">Calligraphic Blur</a>
-      <br />
-      <a class="fracking" href="fracking.html">S.3247</a>
-      <br />
-      <a class="toys" href="toys.html">Toys, Change...</a>
-      <br />
-      <a class="rashomon" href="rashomon.html">Rashōmon</a>
-      <br />
-      <a class="invitation" href="invitation.html">The Invitation</a>
-      <br/>
-      <a class="butterfly" href="butterfly.html">M. Butterfly</a>
+  <body id="thetfest">
+    <div class="navext">
+      <a class="homebutton" href="index.html">Daniel <br class="hideheadbr">Goldberg</a>
+      <div id="nav"></div>
     </div>
 
     <div class="main flex" style="flex-direction: column;">
@@ -48,9 +36,8 @@
 
 
       <div class="text">
-        <small>Thetfest</small>
-        <br />
-      Thetfest was an annual music festival in rural Thetford, Vermont. Although it is no longer held, I aimed to honor the festival by creating a hippie-punk typographic poster (24 × 47 ½"). I then expanded the brand identity to include wristbands and — since there is no cell reception in this backwoods field — a downloadable mobile schedule.
+        <div style="margin-bottom: 13px;"><small>Thetfest</small></div>
+          Surrounding warped type with cut-paper patterns, this 2×4′ hippie-punk poster advertises ThetFest, an annual music festival held in rural Thetford, Vermont. Expanding the brand identity, I included wristbands and&mdash;since there’s no cell reception in this backswoods field&mdash;a downloadable mobile schedule.
       </div>
 
      
@@ -76,4 +63,7 @@
 
     </div>
   </body>
+  <script>$("#nav").load("nav.html")</script>
+  <!-- <script src="script.js"></script> -->
+
 </html>

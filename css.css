@@ -1,8 +1,9 @@
 body {
-  font-family: ibm-plex-sans, sans-serif;
+  font-family: 'trade-gothic-next', sans-serif;
   font-weight: 300;
-  font-size: 1em;
-  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.625;
   display: flex;
   flex-direction: column;
 }
@@ -13,13 +14,92 @@ p {
 
 }
 
-.nav {
+.navext {
   order: 2;
   position: fixed;
   margin-left: 1em;
   margin-top: 1.5em;
   z-index: 9;
+  line-height: 1;
 }
+
+.homebutton{
+  font-family: 'linotype-vectora', sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+
+#indextitle{
+  display: none;
+}
+#homelink{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+#index{
+  font-weight: var(--fontweight); background-color: #eeeeee;
+}
+#thetfest{
+  background-color: #27200e; color: #e7ca6b;
+  font-weight: var(--fontweight);
+}
+#fighting{
+  background-color: #eeeeee; color: #000000; font-weight: var(--fontweight);
+}
+#ward{
+  background-color: #000000; color: #ded9d3; font-weight: var(--fontweight);
+}
+#locknlube{
+  background-color: #ffffff; color: #000000; font-weight: var(--fontweight);
+}
+#chickpea{
+  background-color: #222; color:#ccc;
+  font-weight: var(--fontweight);
+}
+#blur{
+  background-color: rgb(242, 208, 217); color: #000000; 
+  font-weight: var(--fontweight);
+}
+#fracking{
+  background-color: #000000; color:#dddddd;
+  font-weight: var(--fontweight);
+}
+#toys{
+  background-color: #eeeeee; color:#000000; font-weight: var(--fontweight);
+}
+#rashomon{
+  background-color: #000000; color: #dddddd;
+  font-weight: var(--fontweight);
+}
+#invitation{
+  background-color: #fff; color:#000000; font-weight: var(--fontweight);
+}
+#butterfly{
+  background-color: #111; color: 	#fbc5c5;
+  font-weight: var(--fontweight);
+}
+
+
+
+
+
+
+
+
+
+
 
 .main {
   order: 1;
@@ -35,12 +115,11 @@ p {
 }
 
 .home {
-  margin-top: 1.9em;
-  /* margin-left: 6em; */
-  margin-left: auto;
-  margin-right: auto;
-  width: 22em;
-  /* width: 18em; */
+  margin-top: 18px;
+  margin-left: min(36vw, 22em);
+  width: 22em !important;
+  margin-right: 5em;
+
 }
 
 #current {
@@ -51,64 +130,111 @@ small {
   text-transform: uppercase;
   font-size: 0.75em;
   letter-spacing: 1px;
-  line-height: 3em;
+  line-height: 16px;
   
+}
+b{
+  font-weight: 800; 
+  font-size: 1.75em; 
+  font-family: 'linotype-vectora';
+  margin-bottom: 23px;
+  display: inline-block;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline-block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 a:hover::after {
   font-style: italic;
   font-size: 0.75em;
-  line-height: 0.75em;
+  line-height: 1;
+  letter-spacing: 0.02em;
 }
 
 a.chickpea:hover::after {
   content: " illustrated poem";
+  font-weight: var(--fontweight);
 }
 
 a.toys:hover::after {
   content: " book design";
+  font-weight: var(--fontweight);
 }
 
 a.thetfest:hover::after {
   content: " music festival brand";
+  font-weight: var(--fontweight);
 }
 
 a.locknlube:hover::after {
   content: " brochure";
+  font-weight: var(--fontweight);
 }
 
 a.rashomon:hover::after {
   content: " poster";
+  font-weight: var(--fontweight);
 }
 
 a.fracking:hover::after {
   content: " poster";
+  font-weight: var(--fontweight);
 }
 
 a.invitation:hover::after {
   content: " letterpress booklet";
+  font-weight: var(--fontweight);
 }
 
 a.ward:hover::after{
-  content:" limited-edition book"
+  content:" limited-edition book";
+  font-weight: var(--fontweight);
 }
 
 a.fighting:hover::after{
-  content:" discussion board"
+  content:" discussion board";
+  font-weight: var(--fontweight);
 }
 
 a.blur:hover::after{
-  content:" typeface design"
+  content:" typeface design";
+  font-weight: var(--fontweight);
 }
 
 a.butterfly:hover::after{
-  content: " theater poster"
+  content: " theater poster";
+  font-weight: var(--fontweight);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .flex {
@@ -129,6 +255,25 @@ img {
   max-width: 32em;
   padding: 2em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .toys-img {
   margin-right: 2px;
@@ -205,13 +350,13 @@ margin-right: 7%;
   
 
   margin-top: 2.5em;
-  margin-bottom: 6em;
-  height:75vh;
-
-  
-  border-width: 1.5px;
+  margin-bottom: 1em;
+  width: min(95%, 160vh - 2em);
+  height: auto;
+  /* border-width: 1.5px;
   border-style: solid;
-  border-color: #000000;
+  border-color: #000000; */
+  padding: 1.5px;
   margin-left: auto;
   margin-right: auto;
   background-color: black;
@@ -232,6 +377,7 @@ margin-right: 7%;
 .lyndimg1{
   margin-top: -1em; 
   height:100vh;
+  margin-bottom: 1em;
 }
 .lyndimg2{
   height:45vh; 
@@ -247,6 +393,10 @@ margin-right: 7%;
   margin-bottom: 8em;
 }
 
+.wardcredits p{
+  line-height: 26px;
+}
+
 
 
 .blurtext{
@@ -257,7 +407,7 @@ margin-right: 7%;
   border-color: #000000;
   margin-left: auto;
   margin-right: auto;
-  background-color:#ffffff81;
+  background-color:#eeeeee;
 }
 
 .blurpans{
@@ -272,51 +422,35 @@ margin-right: 7%;
   margin-top: 3em;
 }
 
-.butterfly{
-  width: calc(100% - 8em);
-  height: auto;
-}
 
 
 
-/* .slide {
-background-image: url(images/slide.jpg);
-background-size: cover;
-width: 32em;
-height: 32em;
-margin-left: 3em;
-margin-right: 1em;
-margin-top: 2em;
-margin-bottom: 2em;
-overflow: hidden;
-
-animation-name: slide;
-  animation-play-state: running;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps(7);
-
-  -webkit-animation-name: slide;
-  -webkit-animation-play-state: running;
-  -webkit-animation-duration: 15s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps(6);
-}
-
-@keyframes slide {
-    from{background-position-y:0%;}
-    to{background-position-y:100%;}
-
-} */
 
 
 
-@media only screen and (max-width: 1200px){
-  .slide{
-    width: 24em;
-    height: 24em;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 1000px) and (orientation: portrait) {
   img{
@@ -325,27 +459,48 @@ animation-name: slide;
   }
 }
 
-@media only screen and (max-width: 370px) {
+
+@media only screen and (max-width: 410px) {
   .home{
-    /* margin-left: 0.25em; */
-    max-width: 92vw;
+    position: static;
+    margin-left: 1em !important;
+    max-width: calc(100vw - 3em);
   }
-  .h333{
-    display: none;
+  .navext{
+    margin-left: 1em !important;
   }
 
 }
 
-@media only screen and (max-width: 1000px) {
-  .nav {
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 766px) {
+
+
+
+
+
+
+
+  .navext {
     position: static;
-    padding-left: calc(50% - 8.5em);
+    margin-left: 2em;
     margin-bottom: 4em;
     margin-right: 1em;
     /* border-top-style: solid;
     border-top-width: 1px;
     padding-top: 1em; */
-    margin-top: 0em;
+    margin-top: 4em;
   }
   
   body{
@@ -362,8 +517,7 @@ animation-name: slide;
   }
   .home {
     position: static;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2em;
   }
   .slide{
     margin-left: auto;
@@ -377,6 +531,91 @@ animation-name: slide;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .hideheadbr{
+    display: none;
+  }
+
+  a{
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+
+
+
+
+  a::after {
+    font-style: italic;
+    font-size: 0.75em;
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+
+  a.chickpea::after {
+    content: " illustrated poem";
+    font-weight: var(--fontweight);
+  }
+  
+  a.toys::after {
+    content: " book design";
+    font-weight: var(--fontweight);
+  }
+  
+  a.thetfest::after {
+    content: " music festival brand";
+    font-weight: var(--fontweight);
+  }
+  
+  a.locknlube::after {
+    content: " brochure";
+    font-weight: var(--fontweight);
+  }
+  
+  a.rashomon::after {
+    content: " poster";
+    font-weight: var(--fontweight);
+  }
+  
+  a.fracking::after {
+    content: " poster";
+    font-weight: var(--fontweight);
+  }
+  
+  a.invitation::after {
+    content: " letterpress booklet";
+    font-weight: var(--fontweight);
+  }
+  
+  a.ward::after{
+    content:" limited-edition book";
+    font-weight: var(--fontweight);
+  }
+  
+  a.fighting::after{
+    content:" discussion board";
+    font-weight: var(--fontweight);
+  }
+  
+  a.blur::after{
+    content:" typeface design";
+    font-weight: var(--fontweight);
+  }
+  
+  a.butterfly::after{
+    content: " theater poster";
+    font-weight: var(--fontweight);
+  }
+
+
+
+
+
+
+
+
+
+
 
 
   .schedule{
@@ -405,9 +644,6 @@ animation-name: slide;
     margin-bottom: 2em;
     padding-top: 0em;
   }
-
-
-
 
 
   .negativetop{
@@ -503,9 +739,10 @@ animation-name: slide;
     height:auto;
     
     
-    border-width: 1.5px;
+    /* border-width: 1.5px;
     border-style: solid;
-    border-color: #000000;
+    border-color: #000000; */
+    padding: 1.5px;
     margin-left: auto;
     margin-right: auto;
     background-color: black;
@@ -526,7 +763,6 @@ animation-name: slide;
     margin-top: 0em;
     margin-bottom: 3em;
   }
-
 
 
   .lyndimg1{
@@ -565,9 +801,6 @@ animation-name: slide;
   }
 
 
-
-
-
   .blurtext{
     width: calc(90vw - 3em);
     height: auto;
@@ -598,8 +831,15 @@ animation-name: slide;
   }
 
 
-  .butterfly{
-    width:100%;
+  .butterflyimg{
+    margin-top: 0;
+  }
+
+  body#butterfly{
+    margin-top:0
+  }
+  #butterfly .main{
+    margin-top: 0;
   }
 
 

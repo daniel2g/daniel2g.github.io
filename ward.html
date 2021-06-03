@@ -3,39 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Goldberg — Lynd Ward</title>
+    <title>Daniel Goldberg – Lynd Ward</title>
 
     <link rel="stylesheet" href="css.css" />
 
     <link rel="stylesheet" href="https://use.typekit.net/gck2xkr.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+      :root{
+        --fontweight: 300;
+      }
+    </style>
 
    
   </head>
-  <body style="background-color: #000000; color: #ded9d3;">
-    <div class="nav">
-      <a href="index.html"><small>Daniel Goldberg</small></a>
-      <br />
-      <a class="thetfest" href="thetfest.html">Thetfest</a>
-      <br />
-      <a class="fighting" href="fighting.html">Fighting for...</a>
-      <br/>
-      <a class="ward" id="current" href="ward.html">Lynd Ward</a>
-      <br />
-      <a class="locknlube" href="locknlube.html">Lock’N’Lube</a>
-      <br />
-      <a class="chickpea" href="chickpea.html">The Chickpea</a>
-      <br />
-      <a class="blur" href="blur.html">Calligraphic Blur</a>
-      <br />
-      <a class="fracking" href="fracking.html">S.3247</a>
-      <br />
-      <a class="toys" href="toys.html">Toys, Change...</a>
-      <br />
-      <a class="rashomon" href="rashomon.html">Rashōmon</a>
-      <br />
-      <a class="invitation" href="invitation.html">The Invitation</a>
-      <br/>
-      <a class="butterfly" href="butterfly.html">M. Butterfly</a>
+  <body id="ward">
+    <div class="navext">
+      <a class="homebutton" href="index.html">Daniel <br class="hideheadbr">Goldberg</a>
+      <div id="nav"></div>
     </div>
 
     <div class="main flex" style="flex-direction: column;">
@@ -45,14 +31,16 @@
         
         <img src="images/lynd7.jpg" alt="" class="lyndimg2">
         
+        
         <div class="text" style="margin-bottom: 0;">
-        <small style="line-height: 1.5em;">“Illustrated by Lynd Ward” letterpress-printed book</small>
-         </br></br>
-        This book by Robert Dance, in tandem with the Grolier Club exhibition, introduces the 20th-century American illustrator known for his wordless novels in woodcuts. It is the first attempt to compile a comprehensive checklist of Ward’s published work.
-        </br></br>
-        As assistant designer and printer to Margery Cantor, our early meetings revolved around choosing typefaces, which for an audience of bibliophiles is a research-driven process. Ms. Cantor was drawn to the work of Frederic Goudy, whose type designs were not only of Ward’s time and place but were also drawn freehand, reinforcing the centrality of the artist’s hand in Ward’s practice. After receiving the final manuscript, we commenced typesetting: I was instructed in fine-tuning the hyphenation and justification and asked to correct pdf proofs for typographic errors. Soon, we would be cutting the polymer plates to size and constructing an imposition dummy in preparation for printing.
-        </br></br>
-        The printing process began by adhering each polymer plate to the press bed. I would pull a proof, measure the placement of the text, and adjust the plate until the baseline was accurately registered. As I became acquainted with operating the Asburn flatbed press, I found that letterpress printing requires a precise choreography. Printing each spread, I would place a sheet of paper on the tray, my foot momentarily on the pedal to secure it beneath the grippers. I would swiftly turn the handle of the cylinder, stepping down the length of the press, keeping a constant speed in order to meet the publisher’s exacting standards.
+        <div style="margin-bottom: 13px;">
+            <small style="line-height: 1.5em;">“Illustrated by Lynd Ward” letterpress-printed book</small></div>
+        <div style="margin-bottom: 13px;">
+        This book by Robert Dance, in tandem with the Grolier Club exhibition, introduces the 20th-century American illustrator known for his wordless novels in woodcuts. It is the first attempt to compile a comprehensive checklist of Ward’s published work.</div>
+        <div style="margin-bottom: 13px;">
+        As assistant designer and printer to Margery Cantor, our early meetings revolved around choosing typefaces, which for an audience of bibliophiles is a research-driven process. Ms. Cantor was drawn to the work of Frederic Goudy, whose type designs were not only of Ward’s time and place but were also drawn freehand, reinforcing the centrality of the artist’s hand in Ward’s practice. After receiving the final manuscript, we commenced typesetting: I was instructed in fine-tuning the hyphenation and justification and asked to correct PDF proofs for typographic errors. Soon, we would be cutting the polymer plates to size and constructing an imposition dummy in preparation for printing.</div>
+        <div style="margin-bottom: 13px;">
+        The printing process began by adhering each polymer plate to the press bed. I would pull a proof, measure the placement of the text, and adjust the plate until the baseline was accurately registered. As I became acquainted with operating the Asburn flatbed press, I found that letterpress printing requires a precise choreography. Printing each spread, I would place a sheet of paper on the tray, my foot momentarily on the pedal to secure it beneath the grippers. I would swiftly turn the handle of the cylinder, stepping down the length of the press, keeping a constant speed in order to meet the publisher’s exacting standards.</div>
 
       </div>
 
@@ -60,7 +48,7 @@
         
         <!-- <img src="images/lynd10.jpg" alt="" style="margin-bottom: 0; "> -->
 
-        <div class="text" style="letter-spacing: 0.5px; font-size: 0.75em;max-width: none; text-indent: -2em; padding-left: 4em; margin-bottom: 0;">
+        <div class="text wardcredits" style="letter-spacing: 0.04em; font-size: 0.75em; max-width: none; text-indent: -2em; padding-left: 4em; margin-bottom: 0;">
             
         <p >Robert Dance, “Illustrated by Lynd Ward”</p>
         <p >Published in 2015 by The Grolier Club (New York) <br class="lyndbr">and the Impermanent Press (Norwich, Vermont)</p >
@@ -82,4 +70,6 @@
       </div>
 
   </body>
+  <script>$("#nav").load("nav.html");</script>
+  <!-- <script src="script.js"></script> -->
 </html>

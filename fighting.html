@@ -3,37 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Goldberg — Fighting for...</title>
+    <title>Daniel Goldberg – Fighting for...</title>
 
     <link rel="stylesheet" href="css.css" />
 
     <link rel="stylesheet" href="https://use.typekit.net/gck2xkr.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <style>
+      :root{
+        --fontweight: 400;
+      }
+    </style>
+
   </head>
-  <body style="background-color: #eeeeee; color: #000000; font-weight: 400;">
-    <div class="nav">
-      <a href="index.html"> <small>Daniel Goldberg</small></a>
-      <br />
-      <a class="thetfest" href="thetfest.html">Thetfest</a>
-      <br />
-      <a class="fighting" id="current" href="fighting.html">Fighting for...</a>
-      <br/>
-      <a class="ward" href="ward.html">Lynd Ward</a>
-      <br />
-      <a class="locknlube" href="locknlube.html">Lock’N’Lube</a>
-      <br />
-      <a class="chickpea" href="chickpea.html">The Chickpea</a>
-      <br />
-      <a class="blur" href="blur.html">Calligraphic Blur</a>
-      <br />
-      <a class="fracking" href="fracking.html">S.3247</a>
-      <br />
-      <a class="toys" href="toys.html">Toys, Change...</a>
-      <br />
-      <a class="rashomon" href="rashomon.html">Rashōmon</a>
-      <br />
-      <a class="invitation" href="invitation.html">The Invitation</a>
-      <br/>
-      <a class="butterfly" href="butterfly.html">M. Butterfly</a>
+  <body id="fighting">
+    
+    <div class="navext">
+      <a class="homebutton" href="index.html">Daniel <br class="hideheadbr">Goldberg</a>
+      <div id="nav"></div>
     </div>
 
     <div class="main"
@@ -52,18 +40,23 @@
 
         <div class="text" style="margin-bottom: 2em;">
 
-          <div style="margin-bottom: 0.5em;">
+          <div style="margin-bottom: 13px;">
             <small style="line-height: 1.5em;">
               Fighting for the working class...
               </small>
             </div>
 
-            This design for an online discussion board opens with the prompt asking what it means to fight for the working class in 2021. Scrolling down, the visitor can read the submitted entries which highlight issues that American workers are facing. This website aims to provide a space not only for demonstrating a range of problems, but also for proposing solutions: what are the actions we can take now to fight for change? Arriving at the bottom of the webpage, the user is urged to write and publish their own response.
+            This design for an online discussion board opens with the prompt asking what it means to fight for the working class in 2021. Scrolling down, you can read submitted entries which highlight actions we can take now to help American workers. Arriving at the bottom of the page, the user is urged to write and publish their own response.
         </div>
 
         <img src="images/workers-seq.gif" alt="" class="fighting-gif">
 
+
+        
+
       </div>
 
   </body>
+  <script>$("#nav").load("nav.html");</script>
+
 </html>

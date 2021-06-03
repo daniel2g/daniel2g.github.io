@@ -3,54 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Goldberg — The Chickpea</title>
+    <title>Daniel Goldberg – The Chickpea</title>
 
     <link rel="stylesheet" href="css.css" />
 
     <link rel="stylesheet" href="https://use.typekit.net/gck2xkr.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="script.js"></script> -->
 
+    <style>
+      :root{
+        --fontweight: 300;
+      }
+    </style>
    
   </head>
-  <body style="background-color: #232930; color:#c2bf8e;">
-    <div class="nav">
-      <a href="index.html"><small>Daniel Goldberg</small></a>
-      <br />
-      <a class="thetfest" href="thetfest.html">Thetfest</a>
-      <br />
-      <a class="fighting" href="fighting.html">Fighting for...</a>
-      <br/>
-      <a class="ward" href="ward.html">Lynd Ward</a>
-      <br />
-      <a class="locknlube" href="locknlube.html">Lock’N’Lube</a>
-      <br />
-      <a class="chickpea" id="current" href="chickpea.html">The Chickpea</a>
-      <br />
-      <a class="blur" href="blur.html">Calligraphic Blur</a>
-      <br />
-      <a class="fracking" href="fracking.html">S.3247</a>
-      <br />
-      <a class="toys" href="toys.html">Toys, Change...</a>
-      <br />
-      <a class="rashomon" href="rashomon.html">Rashōmon</a>
-      <br />
-      <a class="invitation" href="invitation.html">The Invitation</a>
-      <br/>
-      <a class="butterfly" href="butterfly.html">M. Butterfly</a>
+  <body id="chickpea">
+    <div class="navext">
+      <a class="homebutton" href="index.html">Daniel <br class="hideheadbr">Goldberg</a>
+      <div id="nav"></div>
     </div>
 
     <div class="main flex" style="flex-direction: column;">
       
-        <img src="images/chickp1.png" alt="">
-        <div class="text">
+        <img src="images/chickpea1.svg" class="thetfest-poster-zoom" alt="">
+        <div class="text" style="max-width: 38em;">
+        <div style="margin-bottom: 13px;">
         <small>The Chickpea</small>
-        <br />
+        </div>
         Three illustrated spreads of a poem by Rumi. In the history of Islamic art, the prohibition against images inspired pattern designs which reflect the infinity of the universe without making representations of divine figures. To present this poem, which uses food as metaphor, I created patterns of kitchen utensils rendered in rich earth tones. By replacing traditional geometric or vegetal motifs with more modern imagery, I aim to leave the reader curious and connected to Rumi’s words.
       </div>
 
-        <img src="images/chickp2.png" alt="">
-        <img src="images/chickp3.png" alt="">
+        <img src="images/chickpea2.svg" class="thetfest-poster-zoom" alt="">
+        <img src="images/chickpea3.svg" class="thetfest-poster-zoom" alt="">
         </div>
       </div>
 
   </body>
+  <script>$("#nav").load("nav.html");</script>
+
 </html>
