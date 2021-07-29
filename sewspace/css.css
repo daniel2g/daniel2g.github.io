@@ -1,0 +1,465 @@
+@font-face {
+    font-family: arialnarrow;
+    src: url(fonts/ArialNarrowMTStd-Regular.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: arialnarrow;
+    src: url(fonts/ArialNarrowMTStd-Bold.woff);
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: arialnarrow;
+    src: url(fonts/ArialNarrowMTStd-Italic.woff);
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: arialnarrow;
+    src: url(fonts/ArialNarrowMTStd-BoldIt.woff);
+    font-style: italic;
+    font-weight: bold;
+}
+@font-face {
+    font-family: arialstd;
+    src: url(fonts/ArialMTStd.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: arialstd;
+    src: url(fonts/ArialMTStd-Bold.woff);
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: arialmed;
+    src: url(fonts/ArialMTStd-Medium.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* ----------SCALE FACTOR---------- */
+
+html{
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------HEADER---------- */
+
+
+::-webkit-scrollbar         {
+    width: 0.5rem; background-color: #d4d4d4;}
+::-webkit-scrollbar-thumb   {
+    background-color: #8450c4;
+    
+}
+::-webkit-scrollbar-track-piece{
+    background-color: #d4d4d4;
+}
+::-webkit-scrollbar-corner{
+    background-color: #d4d4d4;
+}
+
+
+
+body{
+    margin: 0px;
+    background-color: #d4d4d4;
+    font-family:'arialnarrow', sans-serif;
+
+}
+.header{
+    width: 50rem;
+    height: 30rem;
+    margin: 0 auto 0 auto;
+
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: white; */
+    
+    position: static;
+}
+svg{
+
+    z-index: -10;
+}
+
+
+.headertext{
+    top: -20rem;
+    margin: 0rem 11rem 0rem 17.5rem;
+    position: relative;
+    z-index: 10;
+}
+.subhead{
+    font-family: 'arialmed';
+    font-weight: normal;
+    letter-spacing: 0rem;
+    word-spacing: 0rem;
+    line-height: 100%;
+    font-size: 1.14rem;
+    transform-origin: center left;
+    transform:scale(1,2);
+    margin-top: 1.8rem;
+    margin-bottom: 2rem;
+}
+.subsubhead{
+    font-style: italic;
+    margin: 2.7rem 2.5rem 0rem 4.8rem;
+    line-height: 140%;
+}
+
+
+
+#rect1{
+    fill: #F4F4F4;
+}
+#rect2{
+    fill: #fbbdc5;
+}
+#rect3{
+    fill: #8450c4;
+}
+#tri1{
+    fill: #b2ab80;
+}
+#circ1{
+    fill: #31b3a4;
+}
+
+/* yellow:  #FFE194 */
+
+#logo-dash{
+    stroke: #000000; 
+    fill: none;
+    stroke-width: 0.5;
+    stroke-dasharray: 6 1;
+}
+
+#logo-cover{
+    stroke: #000000; 
+    fill: none;
+    stroke: rgba(255, 255, 255, 1); 
+    stroke-width: 1;
+    stroke-dasharray: 2752;
+    stroke-dashoffset: 0;
+    animation: logo-animation 6s 
+    cubic-bezier(.67,.47,.84,.87)
+    forwards;
+}
+  
+@keyframes logo-animation {
+
+    to {
+      stroke-dashoffset: 2752;
+    }
+}
+
+
+
+.dash{
+    /* display: none; */
+    stroke: #000000; 
+    stroke-width: 0.5;
+    stroke-dasharray: 5 2;
+}
+
+.dash2{
+    /* display: none; */
+    stroke: #000000; 
+    stroke-width: 0.5;
+    stroke-dasharray: 5 2;
+}
+
+.dash3{
+    /* display: none; */
+    stroke: #000000; 
+    stroke-width: 0.35;
+    stroke-dasharray: 3 1.2;
+}
+
+.footer{
+    z-index: -500;
+    width: 50rem;
+    margin: 0 auto 0 auto;    
+    position: relative;
+}
+
+.footer-svg{
+    width: 50rem;
+    margin: -3rem auto 0 auto;
+    fill: none;
+    stroke: #000000; 
+    stroke-width: 0.4;
+    stroke-dasharray: 4 1.5;
+}
+
+.footertext{
+    color: #1558A5;
+    font-size: 0.6rem;
+    margin: -5.6rem 0 0 23.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------CENTER---------- */
+
+
+.center{
+    width: 50rem;
+    margin: -1rem auto 0 auto;
+
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: #ddddff; */
+
+    display: flex;
+    flex-direction: row;
+}
+
+.openhours{
+    color: #1558A5;
+    margin:1rem 1.5rem 1rem 10rem;
+    width: 12rem;
+    position: relative;
+}
+
+.workshops{
+    margin:1rem 1rem 1rem 5rem;
+    width:18rem;
+}
+
+
+h1{
+    display: block; 
+    font-weight:normal;
+    margin-block-start: 2.4rem;
+    margin-block-end: 0.8rem;
+    transform-origin: center left;
+    font-family: 'arialstd';
+    font-weight: bold;
+    letter-spacing: 0rem;
+    line-height: 100%;
+    font-size: 0.8rem;
+    transform-origin: center left;
+    transform:scale(1,2);
+}
+
+p{
+    margin-block-start: 0.2rem;
+    margin-block-end: 0.2rem;
+    letter-spacing: 0.03rem;
+    font-size: 0.8rem;
+    word-spacing: -0.05rem;
+}
+
+.zag{
+    position: absolute;
+    margin-top: 0.5rem;
+    left:-2rem;
+    width: 15rem;
+    
+
+}
+
+.hours{
+    font-style: italic;
+}
+
+.openhead{
+    font-size: 1.14rem;
+    font-family: 'arialmed';
+    font-weight: normal;
+
+}
+
+.address{
+    color: black;
+    margin: -12.9rem 0 0 3.5rem;
+}
+
+.wshead{
+    font-family: 'arialmed';
+    font-weight: normal;
+    letter-spacing: 0rem;
+    line-height: 100%;
+    font-size: 1.14rem;
+    transform-origin: center left;
+    transform:scale(1,2);
+    margin-top: 2.4rem;
+   
+}
+
+
+.wsbox{
+   margin-left: -1.2rem;
+   margin-block-end: -1.5rem;
+   
+}
+.wsboxtext1{
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+    margin: -6.95rem 0 0 3rem;
+}
+.wsboxtext2{
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+    margin: -6.7rem 0 0 3rem;
+}
+.wsname{
+    margin-block-start: 0rem;
+}
+
+#button{
+    fill: #f4f4f4;
+}
+
+#sewon{
+    /* visibility: hidden; */
+    pointer-events: none;
+    margin: -6rem 0 0 -1.2rem;
+    mix-blend-mode: darken;
+}
+
+.cover{
+    /* display: none; */
+    stroke: rgba(255, 255, 255, 1); 
+    fill: none;
+    stroke-width: 2;
+    stroke-dasharray: 304;
+    stroke-dashoffset: 0;
+}
+
+.sewon-show{
+    animation: sewon-animation; 
+    animation-duration:  1s; 
+    animation-timing-function:  ease-in-out; 
+    animation-fill-mode: forwards;
+}
+  
+@keyframes sewon-animation {
+
+    to {
+      stroke-dashoffset: 303;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* -------Modal-------- */
+
+.modal-hide{
+    display: none;
+}
+
+.modal-container{
+    z-index: 100;
+    position: fixed;
+    top: 0rem;
+}
+.modal-background{
+    position: fixed;
+    z-index: -100;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #d4d4d4;
+    opacity: 50%;
+}
+
+.modal-text{
+    top:50%; left:50%; 
+    transform: translate(-10.5rem,-7.25rem);
+    position: fixed;
+    z-index: 300;
+    width: 22rem;
+}
+
+.modal-title{
+    font-family: 'arialmed';
+    font-weight: normal;
+    letter-spacing: 0rem;
+    line-height: 100%;
+    font-size: 1.14rem;
+    transform-origin: center left;
+    transform:scale(1,2);
+    margin-top: 0;
+    margin-block-end: 1rem;
+   
+}
+
+.modal-desc{
+    margin-block-start: 0.5rem;
+    margin-block-end: 1.5rem;
+}
+
+.modal-foot{
+    font-size: 0.6rem;
+}
+
+.crochet-overflow{
+    height: 8.5rem; 
+    overflow-y: scroll;
+    margin-block-start: 0.5rem;
+}
+
+.register{
+    position: fixed;
+    z-index: 500;
+    top:10.7rem;
+    left:15.3rem;
+    cursor: pointer;
+}
+.closebtn{
+    position: fixed;
+    z-index: 500;
+    top:-4.05rem;
+    left:20.4rem;
+    cursor: pointer;
+    font-family: 'arialnarrow';
+    transform: scale(2.2);
+}
+
+
+
+
+
+/* ------MEDIA QUERY-------- */
+
+@media only screen and (max-width: 1270px){
+    html{
+        font-size: 1.9vw;
+    }
+}

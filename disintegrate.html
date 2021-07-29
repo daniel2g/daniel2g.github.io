@@ -1,0 +1,199 @@
+<!-- 
+Thanks for viewing my portfolio! Please reach out to danielgoldbergvt@gmail.com for more info. Copyright (c) 2021 Daniel Goldberg.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Goldberg – Separate/Disintegrate</title>
+
+    <link rel="stylesheet" href="css.css" />
+
+    <link rel="stylesheet" href="https://use.typekit.net/kvr5dch.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+      @font-face {
+        font-family: "arrows";
+        src: url("disintegrate/arrows-webfont.woff") format("woff");
+      }
+
+      :root{
+        --fontweight: 400;
+      }
+    </style>
+
+   
+  </head>
+  <body id="disintegrate">
+    <div class="navext">
+      <a class="homebutton" href="index.html">Daniel <br class="hideheadbr">Goldberg</a>
+      <div id="nav"></div>
+    </div>
+
+    <div class="main flex" style="flex-direction: column;">
+      
+        <div class="slideshow1 dis_head">
+          <img src="images/sd_1.png" alt="" class="disintegrate_img" id="cont1_img1">
+          <img src="images/sd_2.png" alt="" class="disintegrate_img dis_hide" id="cont1_img2">
+          <img src="images/sd_3.png" alt="" class="disintegrate_img dis_hide" id="cont1_img3">
+          <!-- <img src="images/sd_4.png" alt="" class="disintegrate_img dis_hide" id="cont1_img4"> -->
+        </div>
+
+
+        <div class="text" style="margin-bottom: 0;">
+        
+          <div style="margin-bottom: 13px;" class="dis_small">
+            <span style="font-family: 'arrows';">🡡</span> In this passage about the impermanence of literacy in society, each word disintegrates almost as soon as it appears on screen.
+          </div>
+        </div>
+
+        
+        
+        
+        
+        <div class="text" style="margin-bottom: 0em;">
+          	<div style="margin-bottom: 13px;">
+            	<small style="line-height: 1.5em; text-transform: none; letter-spacing: 0.4px;" class="newtitle">Separate/Disintegrate variable font</small>
+          	</div>
+          	<div style="margin-bottom: 13px;">
+        		Inspired by Octavia Butler’s short story “Speech Sounds,” I designed this thematic variable font in Glyphs and programmed its accompanying type specimen in JavaScript. The typeface is made of individual letter parts which can be animated from an expanded view to a pile of collapsed parts.
+          	</div>
+         	<small style="text-transform: none; letter-spacing: 0.03em;">
+            	<a href="/disintegrate/" target="_blank">View live site<span style="font-family: 'ibm-plex-sans';">↗</span></a>
+            </small>
+        </div>
+
+
+        <img src="images/sd_5.png" alt="" class="dis_inset">
+
+
+
+
+        <div class="slideshow1">
+
+           <img src="images/sd_6.png" alt="" class="disintegrate_img" id="cont2_img1">
+            <img src="images/sd_7.png" alt="" class="disintegrate_img dis_hide" id="cont2_img2">
+        </div>
+
+        <div class="slideshow1 namepassage">
+           <img src="images/sd_8.png" alt="" class="disintegrate_img" id="cont3_img1">
+           <img src="images/sd_9.png" alt="" class="disintegrate_img dis_hide" id="cont3_img2">
+           <img src="images/sd_10.png" alt="" class="disintegrate_img dis_hide" id="cont3_img3">
+        </div>
+
+        <div class="text" style="margin-bottom: 0;">
+        
+          <div style="margin-bottom: 13px;" class="dis_small">
+            <span style="font-family: 'arrows';">🡡</span> This passage demonstrates how the characters communicate their names without the use of language. The text will slowly become unintelligible as the user hovers over the words, each one being replaced with a rhyming alternate.
+          </div>
+        </div>
+
+
+        <img src="images/sd_11_2.png" alt="" class="dis_inset typetester">
+
+        <div class="text" style="margin-bottom: 0;">
+        
+          <div style="margin-bottom: 13px;" class="dis_small">
+            <span style="font-family: 'arrows';">🡡</span> Use this type tester to explore the possibilities of the typeface. The read-aloud feature will generate unexpected results.
+          </div>
+        </div>
+
+
+
+        </div>
+      </div>
+
+  </body>
+  <script>$("#nav").load("nav.html");
+
+    // console.log($("#cont1_img1").css("height"));
+    // $(".slideshow1").css("height", $("#cont1_img1").css("height"));
+    // $(window).resize(function(){
+    //   $(".slideshow1").css("height", $("#cont1_img1").css("height"));
+    // });
+
+
+    const slideTime = 1200;
+    
+    var counter1 = 1;
+    function updateImage1(){
+      if (counter1 === 4) {counter1 = 1};
+      if (counter1 === 1) {
+        $("#cont1_img2").removeClass("dis_hide");
+        $("#cont1_img1").addClass("dis_hide");
+        
+      };
+      if (counter1 === 2) {
+        $("#cont1_img3").removeClass("dis_hide");
+        $("#cont1_img2").addClass("dis_hide");
+        
+      };
+      if (counter1 === 3) {
+        $("#cont1_img1").removeClass("dis_hide");
+        $("#cont1_img3").addClass("dis_hide");
+        
+      };
+      if (counter1 === 4) {
+        $("#cont1_img1").removeClass("dis_hide");
+        $("#cont1_img4").addClass("dis_hide");
+        
+      };
+      counter1++;
+    };
+    setInterval(updateImage1, slideTime);
+
+
+    var counter2 = 1;
+    function updateImage2(){
+      if (counter2 === 3) {counter2 = 1};
+      if (counter2 === 1) {
+        $("#cont2_img2").removeClass("dis_hide");
+        $("#cont2_img1").addClass("dis_hide");
+        
+      };
+      if (counter2 === 2) {
+        $("#cont2_img1").removeClass("dis_hide");
+        $("#cont2_img2").addClass("dis_hide");
+        
+      };
+      counter2++;
+    };
+    setInterval(updateImage2, slideTime);
+
+
+	var counter3 = 1;
+    function updateImage3(){
+      if (counter3 === 4) {counter3 = 1};
+      if (counter3 === 1) {
+        $("#cont3_img2").removeClass("dis_hide");
+        $("#cont3_img1").addClass("dis_hide");
+        
+      };
+      if (counter3 === 2) {
+        $("#cont3_img3").removeClass("dis_hide");
+        $("#cont3_img2").addClass("dis_hide");
+        
+      };
+      if (counter3 === 3) {
+        $("#cont3_img1").removeClass("dis_hide");
+        $("#cont3_img3").addClass("dis_hide");
+        
+      };
+      counter3++;
+    };
+    setInterval(updateImage3, slideTime);
+
+
+
+
+
+
+
+  
+  
+  
+  </script>
+  <!-- <script src="script.js"></script> -->
+</html>

@@ -1,3 +1,6 @@
+<!-- 
+Thanks for viewing my portfolio! Please reach out to danielgoldbergvt@gmail.com for more info. Copyright (c) 2021 Daniel Goldberg.
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,6 +17,20 @@
     <style>
       :root{
         --fontweight: 400;
+        overflow: hidden;
+      }
+
+      @media only screen and (max-width: 766px){
+        .navext{
+          margin-top: calc(52vw + 2em);
+        }
+        .slideshow2{
+          height: 0;
+        }
+        :root{
+          overflow-x: hidden;
+          overflow-y: auto;
+        }
       }
     </style>
 
@@ -21,31 +38,57 @@
   <body id="index">
     <div class="main" style="margin-left: 0;">
       <div class="home">
-        <b>Daniel Goldberg</b>
-        <br>
-        <p style="margin-bottom: 26px;">
-         I am a 2021 graduate of the Rhode Island School of Design seeking to help craft and publish visual narratives. I’m interested in reader-centered graphic design that communicates with nuance and clarity. My practice spans typography and layout for print and web, photography and illustration, and writing and research. 
-      </p>
+
+        <div class="homeflex">
+
+          <p class="homebio">A recent graduate of the Rhode Island School of Design, I seek a position crafting potent imagery and nuanced reading experiences as part of a design team.
+          </p>
 
 
 
 
-        <small style="text-transform: none; letter-spacing: 0.03em;">
-          <a href="mailto:danielgoldbergvt@gmail.com">
-            danielgoldbergvt@gmail.com
-          </a>
-          
+          <small style="text-transform: none; letter-spacing: 0.03em; margin-right: 0.5em;" class="contactinfo">
+            <a href="mailto:danielgoldbergvt@gmail.com" class="mailto">
+              danielgoldbergvt@gmail.com
+            </a>
+            
 
-        <br />
+            <br />
 
-        <a href="daniel_goldberg_resume_0524.pdf" target="_blank">resume<span style="font-family: 'ibm-plex-sans';">↗</span></a>
+            <a href="daniel_goldberg_resume_0721g.pdf" target="_blank">resume<span style="font-family: 'ibm-plex-sans';">↗</span></a>
 
-      </small>
-    </div>
+          </small>
+        
+        </div>
+
+        <div class="slideshow2">
 
 
-      <div class="navext">
-        <a class="homebutton" href="index.html">Design <br class="hideheadbr">Projects</a>
+          <div class="slide_container" id="slide_cont4">
+            <img src="images/lynd9.jpg" alt="" id="home_img4">
+          </div>
+
+          <div class="slide_container" id="slide_cont3">
+            <img src="images/book_pages_00_nb.jpg" alt="" id="home_img3">
+          </div>
+
+          <div class="slide_container" id="slide_cont2">
+            <img src="images/thetfest2.jpg" alt="" id="home_img2">
+          </div>
+
+          <div class="slide_container" id="slide_cont1">
+            <img src="images/sd_2.png" alt="" class="" id="home_img1">
+          </div>
+
+        </div>
+
+
+      
+      </div>
+
+
+    <div class="navext">
+        <a class="homebutton" href="index.html">Daniel <br class="hideheadbr">Goldberg</a>
         
         <div id="nav"></div></div>
       
@@ -53,5 +96,73 @@
 
     </div>
   </body>
-  <script>$("#nav").load("nav.html")</script>
+  <script>$("#nav").load("nav.html");
+
+    $("#home_img1").click(function(){
+      location.assign("disintegrate.html");
+    });
+    $("#home_img2").click(function(){
+      location.assign("thetfest.html");
+    });
+    $("#home_img3").click(function(){
+      location.assign("economics.html");
+    });
+    $("#home_img4").click(function(){
+      location.assign("ward.html");
+    });
+
+
+    const slideTime = 3000;
+    
+    var counter1 = 1;
+    var zIndexCounter = 101;
+    function updateImage1(){
+      if (counter1 === 5) {counter1 = 1};
+      if (counter1 === 1) {
+
+        $("#slide_cont2").hide();
+        $("#slide_cont2").css("z-index", zIndexCounter);
+        $("#slide_cont2").fadeIn(300);
+
+      };
+      if (counter1 === 2) {
+
+        $("#slide_cont3").hide();
+        $("#slide_cont3").css("z-index", zIndexCounter);
+        $("#slide_cont3").fadeIn(300);
+
+      };
+      if (counter1 === 3) {
+        
+        $("#slide_cont4").hide();
+        $("#slide_cont4").css("z-index", zIndexCounter);
+        $("#slide_cont4").fadeIn(300);
+
+      };
+      if (counter1 === 4) {
+        
+        $("#slide_cont1").hide();
+        $("#slide_cont1").css("z-index", zIndexCounter);
+        $("#slide_cont1").fadeIn(300);
+        
+      };
+      counter1++;
+      zIndexCounter++;
+    };
+    setInterval(updateImage1, slideTime);
+
+
+
+
+
+  $(document).ready(function(){
+    let ua = window.navigator.userAgent;
+    if (ua.indexOf("Trident") > -1) {
+     alert("This website is not supported by Internet Explorer. Please reach out to danielgoldbergvt@gmail.com for a PDF portfolio. Thanks!");
+    };
+  });
+  
+  
+  
+  </script>
 </html>
