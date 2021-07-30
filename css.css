@@ -266,73 +266,87 @@ a:hover::after {
 }
 
 a.chickpea:hover::after {
-  content: " illustrated poem";
+  content: "illustrated poem";
   font-weight: var(--fontweight);
+  padding-left: 1em;
 }
 
 a.toys:hover::after {
-  content: " book design";
+  content: "book design";
   font-weight: var(--fontweight);
+  padding-left: 1em;
 }
 
 a.thetfest:hover::after {
-  content: " music festival brand";
+  content: "music festival brand";
   font-weight: var(--fontweight);
+  padding-left: 1em;
 }
 
 a.economics:hover::after {
-  content: " textbook design";
+  content: "textbook design";
   font-weight: var(--fontweight);
+  padding-left: 1em;
 }
 
 a.disintegrate:hover::after {
-  content: " variable font";
+  content: "variable font";
   font-weight: var(--fontweight);
+  padding-left: 1em;
 }
 
 a.locknlube:hover::after {
-  content: " brochure";
+  content: "brochure";
   font-weight: var(--fontweight);
+  padding-left: 1em;
 }
 
 a.rashomon:hover::after {
-  content: " poster";
+  content: "poster";
   font-weight: var(--fontweight);
+  padding-left: 1em;
 }
 
 a.fracking:hover::after {
-  content: " poster";
+  content: "poster";
   font-weight: var(--fontweight);
+  padding-left: 1em;
 }
 
 a.invitation:hover::after {
-  content: " letterpress booklet";
+  content: "letterpress booklet";
   font-weight: var(--fontweight);
+  padding-left: 1em;
 }
 
 a.ward:hover::after{
-  content:" limited-edition book";
+  content: "limited-edition book";
   font-weight: var(--fontweight);
+  padding-left: 1em;
 }
 
 a.fighting:hover::after{
-  content:" discussion board";
+  content: "discussion board";
   font-weight: var(--fontweight);
+  padding-left: 1em;
 }
 
 a.blur:hover::after{
-  content:" typeface design";
+  content: "typeface design";
   font-weight: var(--fontweight);
+  padding-left: 1em;
 }
 
 a.butterfly:hover::after{
-  content: " theater poster";
+  content: "theater poster";
   font-weight: var(--fontweight);
+  padding-left: 1em;
 }
 
 a.sewspace:hover::after{
-  content: " website design";
+  content: "website design";
   font-weight: var(--fontweight);
+  padding-left: 1em;
 }
 
 
@@ -437,10 +451,10 @@ img {
 }
 
 .invimg{
-  width: 40%;
-  height: auto;
+  width: auto;
+  height: calc(25.5vw - 3em);
   margin-bottom: 1em;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
 }
 
 .invsp{
@@ -854,73 +868,87 @@ margin-right: 7%;
   }
 
   a.chickpea::after {
-    content: " illustrated poem";
+    content: "illustrated poem";
     font-weight: var(--fontweight);
+    padding-left: 1em;
   }
   
   a.toys::after {
-    content: " book design";
+    content: "book design";
     font-weight: var(--fontweight);
+    padding-left: 1em;
   }
   
   a.thetfest::after {
-    content: " music festival brand";
+    content: "music festival brand";
     font-weight: var(--fontweight);
+    padding-left: 1em;
   }
   
   a.locknlube::after {
-    content: " brochure";
+    content: "brochure";
     font-weight: var(--fontweight);
+    padding-left: 1em;
   }
   
   a.rashomon::after {
-    content: " poster";
+    content: "poster";
     font-weight: var(--fontweight);
+    padding-left: 1em;
   }
   
   a.fracking::after {
-    content: " poster";
+    content: "poster";
     font-weight: var(--fontweight);
+    padding-left: 1em;
   }
   
   a.invitation::after {
-    content: " letterpress booklet";
+    content: "letterpress booklet";
     font-weight: var(--fontweight);
+    padding-left: 1em;
   }
   
   a.ward::after{
-    content:" limited-edition book";
+    content: "limited-edition book";
     font-weight: var(--fontweight);
+    padding-left: 1em;
   }
   
   a.fighting::after{
-    content:" discussion board";
+    content: "discussion board";
     font-weight: var(--fontweight);
+    padding-left: 1em;
   }
   
   a.blur::after{
-    content:" typeface design";
+    content: "typeface design";
     font-weight: var(--fontweight);
+    padding-left: 1em;
   }
   
   a.butterfly::after{
-    content: " theater poster";
+    content: "theater poster";
     font-weight: var(--fontweight);
+    padding-left: 1em;
   }
 
   a.economics::after {
-    content: " textbook design";
+    content: "textbook design";
     font-weight: var(--fontweight);
+    padding-left: 1em;
   }
   
   a.disintegrate::after {
-    content: " variable font";
+    content: "variable font";
     font-weight: var(--fontweight);
+    padding-left: 1em;
   }
 
   a.sewspace::after{
-    content: " website design";
+    content: "website design";
     font-weight: var(--fontweight);
+    padding-left: 1em;
   }
 
 
