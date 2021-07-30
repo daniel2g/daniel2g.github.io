@@ -517,6 +517,7 @@ margin-right: 7%;
   margin-top: -1em; 
   height:100vh;
   margin-bottom: 1em;
+  max-height: 62vw;
 }
 .lyndimg2{
   height:45vh; 
@@ -526,6 +527,9 @@ margin-right: 7%;
   margin-bottom: 0; 
   height:auto; 
   width:100%;
+}
+.lyndimg4{
+  max-height: 62vw;
 }
 .lyndimg5{
   height:60vh;
@@ -722,11 +726,49 @@ margin-right: 7%;
 
 
 
-@media only screen and (min-width: 1000px) and (orientation: portrait) {
+@media only screen and (min-width: 766px) and (orientation: portrait) {
   img{
     height: auto;
     width: 100%;
   }
+  .schedule, .wrist-comp{
+    width: auto;
+    height: 95vh;
+  }
+  .dis_inset{
+    height: auto;
+  }
+  .lyndimg1{
+    height: auto;
+  }
+  .blurtext{
+    height: 60vw;
+    width: auto;
+  }
+  .blurtext1{
+    transform: translateX(-15vw);
+  }
+  .blurtext2{
+    transform: translateX(15vw);
+  }
+  .blurbeziers{
+    height: auto;
+  }
+  .fighting1{
+    height: auto;
+    width: calc(100% - 8em);
+    margin-right: 6em;
+    margin-left: 1em;
+  }
+  .fighting2{
+    height: auto;
+    width: calc(100% - 8em);
+    margin-left: 6em;
+  }
+  .rash_top{
+    max-height: 95vh;
+  }
+
 }
 
 
