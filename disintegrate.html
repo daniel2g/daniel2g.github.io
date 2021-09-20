@@ -34,7 +34,7 @@ Thanks for viewing my portfolio! Please reach out to danielgoldbergvt@gmail.com 
 
     <div class="main flex" style="flex-direction: column;">
       
-        <div class="slideshow1 dis_head">
+        <div class="slideshow1 dis_head" id="sd_img_link">
           <img src="images/sd_1.png" alt="" class="disintegrate_img" id="cont1_img1">
           <img src="images/sd_2.png" alt="" class="disintegrate_img dis_hide" id="cont1_img2">
           <img src="images/sd_3.png" alt="" class="disintegrate_img dis_hide" id="cont1_img3">
@@ -107,6 +107,10 @@ Thanks for viewing my portfolio! Please reach out to danielgoldbergvt@gmail.com 
 
   </body>
   <script>$("#nav").load("nav.html");
+
+    $("#sd_img_link").on("click", function(){
+      window.open('/disintegrate/','_blank');
+    });
 
     // console.log($("#cont1_img1").css("height"));
     // $(".slideshow1").css("height", $("#cont1_img1").css("height"));

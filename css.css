@@ -115,6 +115,10 @@ p {
   background-color: #eee; color: #000000;
   font-weight: var(--fontweight);
 }
+#bookpile{
+  background-color: #eee; color: #000000;
+  font-weight: var(--fontweight);
+}
 #fighting{
   background-color: #eeeeee; color: #000000; font-weight: var(--fontweight);
 }
@@ -345,6 +349,12 @@ a.butterfly:hover::after{
 
 a.sewspace:hover::after{
   content: "website design";
+  font-weight: var(--fontweight);
+  padding-left: 1em;
+}
+
+a.bookpile:hover::after{
+  content: "bibliography";
   font-weight: var(--fontweight);
   padding-left: 1em;
 }
@@ -719,6 +729,10 @@ margin-right: 7%;
 }
 
 
+#bookpile_img_link, #sd_img_link, .sew_img_link{
+  cursor: pointer;
+}
+
 
 
 
@@ -989,6 +1003,12 @@ margin-right: 7%;
 
   a.sewspace::after{
     content: "website design";
+    font-weight: var(--fontweight);
+    padding-left: 1em;
+  }
+
+  a.bookpile::after{
+    content: "bibliography";
     font-weight: var(--fontweight);
     padding-left: 1em;
   }
